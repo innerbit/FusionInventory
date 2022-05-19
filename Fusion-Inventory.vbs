@@ -82,8 +82,8 @@ SetupVersion = "2.6"
 '       You also must be sure that you have removed the "Open File Security Warning"
 '       from programs accessed from that UNC.
 '
-SetupLocation = "https://innerbit.dyndns.info/downloads/fusion/"
-
+'SetupLocation = "https://innerbit.dyndns.info/downloads/fusion/"
+SetupLocation = "https://github.com/fusioninventory/fusioninventory-agent/releases/download/2.6/"
 
 ' SetupArchitecture
 '    The setup architecture can be 'x86', 'x64' or 'Auto'
