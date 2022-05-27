@@ -37,6 +37,7 @@ REM CLIENTES
 		echo 	[14]. DELLANNO FOZ
 		echo 	[15]. POLICLINICA
 		echo 	[16]. SIGILUS CONTABILIDADE
+		echo 	[17]. OUTROS
 		echo.
 		echo 0. Sair
 		echo ==============================================
@@ -44,19 +45,21 @@ REM CLIENTES
 		set /p choice="Escolha sua opcao: " 
 			if "%choice%"=="1" goto submenu_1 
 			if "%choice%"=="2" goto submenu_2
-			if "%choice%"=="2" goto submenu_3 
-			if "%choice%"=="2" goto submenu_4 
-			if "%choice%"=="2" goto submenu_5 
-			if "%choice%"=="2" goto submenu_6 
-			if "%choice%"=="2" goto submenu_7 
-			if "%choice%"=="2" goto submenu_8 
-			if "%choice%"=="2" goto submenu_9 
-			if "%choice%"=="2" goto submenu_10
-			if "%choice%"=="2" goto submenu_11
-			if "%choice%"=="2" goto submenu_12
-			if "%choice%"=="2" goto submenu_13
-			if "%choice%"=="2" goto submenu_14
-			if "%choice%"=="2" goto submenu_15
+			if "%choice%"=="3" goto submenu_3 
+			if "%choice%"=="4" goto submenu_4 
+			if "%choice%"=="5" goto submenu_5 
+			if "%choice%"=="6" goto submenu_6 
+			if "%choice%"=="7" goto submenu_7 
+			if "%choice%"=="8" goto submenu_8 
+			if "%choice%"=="9" goto submenu_9 
+			if "%choice%"=="10" goto submenu_10
+			if "%choice%"=="11" goto submenu_11
+			if "%choice%"=="12" goto submenu_12
+			if "%choice%"=="13  goto submenu_13
+			if "%choice%"=="14" goto submenu_14
+			if "%choice%"=="15" goto submenu_15
+			if "%choice%"=="16" goto submenu_16
+			if "%choice%"=="17" goto submenu_17
     			
 			if "%choice%"=="0" goto exit
 			
@@ -122,6 +125,10 @@ REM CLIENTES
 			goto submenu_0
 			:submenu_16
 			set empresa=SIGILUS CONTABILIDADE
+			echo %empresa%
+			goto submenu_0
+			:submenu_17
+			set /p empresa="Cliente:"
 			echo %empresa%
 			goto submenu_0			
 			
